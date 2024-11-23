@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.ui.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 367px; 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.display {
+    margin-bottom: 20px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 70px; 
+}
+
+button:hover {
+    background-color: #666;
+}
+
+button:active {
+    background-color: #888;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button.ui.button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.ui.button:hover {
+    background-color: #45a049;
+}
+
+button.ui.button:active {
+    background-color: #3e8e41;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.buttons button {
+    width: 100%;
+}
+
